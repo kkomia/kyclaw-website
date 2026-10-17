@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 92" role="img" aria-labelledby="title desc">
+  <title id="title">kyclaw horizontal logo</title>
+  <desc id="desc">A friendly brown otter mascot beside the kyclaw wordmark.</desc>
+  <g color="#5a3825">
+    <path fill="currentColor" d="M14 46C14 26.67 29.67 11 49 11s35 15.67 35 35-15.67 35-35 35S14 65.33 14 46Z"/>
+    <path fill="#f8f4e9" d="M22 49c0-15.46 12.09-28 27-28s27 12.54 27 28c0 12.9-8.2 23.83-19.5 27.1-2.48.72-5.19-1.28-7.5-4.73-2.31 3.45-5.02 5.45-7.5 4.73C30.2 72.83 22 61.9 22 49Z"/>
+    <path fill="currentColor" d="M23 34c-5.3-7.45-1.32-16.08 6-14.4 2.56.59 4.2 2.64 4.87 5.29L23 34Zm52 0c5.3-7.45 1.32-16.08-6-14.4-2.56.59-4.2 2.64-4.87 5.29L75 34Z"/>
+    <circle cx="38" cy="40" r="4.5" fill="#24150d"/><circle cx="60" cy="40" r="4.5" fill="#24150d"/>
+    <circle cx="39.5" cy="38.5" r="1.25" fill="#fff"/><circle cx="61.5" cy="38.5" r="1.25" fill="#fff"/>
+    <path fill="#6f4933" d="M28 50c3.2-8.4 10.57-12.5 21-12.5S66.8 41.6 70 50c-3.07 9.08-11.05 13.5-21 13.5S31.07 59.08 28 50Z"/>
+    <path fill="#2b190f" d="M42 48.5c0-3.24 3.58-5.5 7-5.5s7 2.26 7 5.5c0 2.39-3.14 4.35-7 4.35s-7-1.96-7-4.35Z"/>
+    <path fill="none" stroke="#2b190f" stroke-linecap="round" stroke-width="2.5" d="M49 52.5v6.2m0 0c-4.5 0-7.2-1.8-9.2-4.1m9.2 4.1c4.5 0 7.2-1.8 9.2-4.1"/>
+  </g>
+  <text x="102" y="63" fill="currentColor" font-family="Georgia, serif" font-size="56" font-weight="700" letter-spacing="-3">kyclaw</text>
+  <circle cx="397" cy="61" r="5" fill="#b25b3f"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">kyclaw brand cover</title>
+  <desc id="desc">A warm editorial brand composition featuring the kyclaw otter mascot emerging above a desktop line, surrounded by quiet orbit lines.</desc>
+  <rect width="900" height="760" fill="#f8f4e9"/>
+  <circle cx="690" cy="184" r="214" fill="none" stroke="#ded2bd" stroke-width="2"/>
+  <circle cx="690" cy="184" r="177" fill="none" stroke="#ded2bd" stroke-width="2"/>
+  <path d="M0 594c158-18 286-21 430-6 143 15 278 11 470-21" fill="none" stroke="#c39a78" stroke-width="10" stroke-linecap="round"/>
+  <path d="M0 608c171-13 290-12 430 1 152 14 291 7 470-24" fill="none" stroke="#efe2cf" stroke-width="18" stroke-linecap="round"/>
+  <g transform="translate(212 102)">
+    <path fill="#6f4933" d="M53 492c2-142 17-253 47-327-27-20-34-59-13-87 18-24 42-29 67-13C198 25 287 25 331 65c25-16 49-11 67 13 21 28 14 67-13 87 30 74 45 185 47 327H53Z"/>
+    <path fill="#3a2114" d="M76 126c-15-32-4-62 20-67 18-4 36 9 42 31L76 126Zm292 0c15-32 4-62-20-67-18-4-36 9-42 31l62 36Z"/>
+    <path fill="#f8f4e9" d="M65 211c0-54 42-97 96-97h115c54 0 96 43 96 97v129c0 42-34 76-76 76H141c-42 0-76-34-76-76V211Z"/>
+    <circle cx="146" cy="181" r="24" fill="#25160e"/><circle cx="291" cy="181" r="24" fill="#25160e"/>
+    <circle cx="153" cy="174" r="6" fill="#fff"/><circle cx="298" cy="174" r="6" fill="#fff"/>
+    <path fill="#6f4933" d="M103 270c18-39 56-55 119-55s101 16 119 55c-14 51-56 78-119 78s-105-27-119-78Z"/>
+    <path fill="#2b190f" d="M176 260c0-18 20-29 46-29s46 11 46 29c0 14-20 23-46 23s-46-9-46-23Z"/>
+    <path fill="none" stroke="#2b190f" stroke-linecap="round" stroke-width="10" d="M222 283v38m0 0c-22 0-41-9-54-23m54 23c22 0 41-9 54-23"/>
+    <path fill="#e5ded0" d="M112 359c29 32 66 47 110 47s81-15 110-47c-24 59-65 87-110 87s-86-28-110-87Z"/>
+    <path fill="#f8f4e9" d="M140 481l-20 31 31-14-5 32 26-28 5 36 25-38 20 35 20-35 25 38 5-36 26 28-5-32 31 14-20-31c-42 13-86 13-128 0Z"/>
+  </g>
+  <g fill="#5a3825" font-family="Georgia, serif">
+    <text x="48" y="72" font-size="20" letter-spacing="4">KYCLAW / DESKTOP COMPANION</text>
+    <text x="48" y="710" font-size="31" font-weight="700" letter-spacing="-1">ideas, made tangible.</text>
+  </g>
+  <circle cx="830" cy="690" r="9" fill="#b25b3f"/>
+</svg>

@@ -95,14 +95,15 @@
         border-bottom: 3px solid var(--ink);
       }
       .logo {
-        font-family: Georgia, serif;
-        font-size: 42px;
-        font-weight: 700;
-        letter-spacing: -3px;
-        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        width: 164px;
+        line-height: 0;
       }
-      .logo span {
-        color: var(--accent);
+      .logo img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
       nav {
         display: flex;
@@ -206,16 +207,20 @@
         font-size: 10px;
         letter-spacing: 0.13em;
       }
-      .cover-word {
+      .cover-brand {
         position: absolute;
-        font-family: Georgia, serif;
-        font-size: clamp(100px, 13vw, 182px);
-        font-style: italic;
-        letter-spacing: -0.08em;
-        top: 52px;
-        left: 24px;
-        color: #c4cdb8;
-        line-height: 1;
+        inset: 28px;
+        width: calc(100% - 56px);
+        height: calc(100% - 56px);
+        object-fit: contain;
+        mix-blend-mode: multiply;
+        z-index: 0;
+      }
+      .cover-head,
+      .app,
+      .cover-bottom {
+        position: relative;
+        z-index: 1;
       }
       .orbit {
         width: 320px;
@@ -633,8 +638,7 @@
         border-top: 1px solid var(--line);
       }
       footer .logo {
-        font-size: 29px;
-        letter-spacing: -2px;
+        width: 126px;
       }
       footer p,
       footer a:last-child {
@@ -714,10 +718,6 @@
         .cover {
           aspect-ratio: 1.1;
           padding: 24px;
-        }
-        .cover-word {
-          font-size: 32vw;
-          top: 45px;
         }
         .app {
           margin-top: 75px;
@@ -835,7 +835,9 @@
         ><span>VOL. 01 / 2026</span>
       </div>
       <div class="nav">
-        <a class="logo" href="#top" aria-label="kyclaw 首页">kyclaw<span>.</span></a>
+        <a class="logo" href="#top" aria-label="kyclaw 首页">
+          <img src="assets/kyclaw-logo-horizontal.svg" alt="kyclaw" width="420" height="92" />
+        </a>
         <nav aria-label="主导航">
           <a href="#features">产品能力</a><a class="nav-secondary" href="#workflow">工作方式</a
           ><a class="nav-secondary" href="#faq">常见问题</a
@@ -859,12 +861,18 @@
               >下载 Windows 安装包 <span aria-hidden="true">↗</span></a
             ><a class="text-link" href="#gallery">看看真实界面 ↓</a>
           </div>
-          <p class="hero-note">Windows 桌面应用 · 最新发布版 · 为真实工作而设计</p>
+          <p class="hero-note">Windows x64 · 当前发布版 0.1.2 · 需自行配置模型服务</p>
         </div>
         <figure>
           <div class="cover">
             <div class="cover-head"><span>THE KYCLAW EDIT</span><span>IDEA → OUTPUT</span></div>
-            <div class="cover-word" aria-hidden="true">Create.</div>
+            <img
+              class="cover-brand"
+              src="assets/kyclaw-cover.svg"
+              alt="kyclaw 水獭吉祥物品牌主题图"
+              width="900"
+              height="760"
+            />
             <div class="orbit" aria-hidden="true"></div>
             <div
               class="app"
@@ -1087,8 +1095,25 @@
           <details>
             <summary>第一次使用，需要准备什么？</summary>
             <p>
-              准备 Windows
-              电脑、可用的模型服务配置，并选择工作区。安装包目前没有代码签名；若系统提示风险，请先核实下载来源与文件，不要忽略来源不明的安全警告。
+              准备 Windows x64 电脑，配置模型服务地址、模型名称和服务所需的密钥，再选择工作区。
+              可连接兼容的远程或内网模型服务；是否支持图片、工具调用以及上下文长度，取决于所选模型与服务。
+              安装包目前没有代码签名；若系统提示风险，请先核实下载来源与校验值，不要忽略来源不明的安全警告。
+            </p>
+          </details>
+          <details>
+            <summary>AI 会直接修改我的文件吗？</summary>
+            <p>
+              kyclaw 可以调用工具创建或修改文件，也能运行命令。工作区内与工作区外的权限分别设置：
+              “每次询问”按审批规则执行，“完全访问”可免去逐次审批。请先确认授权范围；
+              记忆指令和计划批准不等于扩大文件访问权限。
+            </p>
+          </details>
+          <details>
+            <summary>0.1.3 的新功能现在能下载吗？</summary>
+            <p>
+              当前发布版为 0.1.2。0.1.3 正在开发与人工验收，包含图片预览比例与留白修复、 Skill
+              独立导入、关闭到托盘、上下文展示、表格操作和会话运行提示等改动，尚未发布。 影子
+              Git、每轮改动对比与 Office 批注仍在研究，不属于当前安装包的功能。
             </p>
           </details>
         </div>
@@ -1097,7 +1122,7 @@
         <div>
           <div class="eyebrow">Your next chapter starts here</div>
           <h2 id="download-title">下一份好作品，<br />从这里开始。</h2>
-          <p>kyclaw for Windows &nbsp; / &nbsp; 最新发布版</p>
+          <p>kyclaw for Windows x64 &nbsp; / &nbsp; 0.1.2 已发布</p>
         </div>
         <div class="download-status">
           <strong
@@ -1107,13 +1132,37 @@
             ></strong
           >
           <p>
-            固定下载地址，随发布更新。<br />安装后请配置可用的模型服务；安装包未签名，请先核实下载来源。
+            0.1.2 · 约 214 MiB · 安装包未签名。<br />
+            此下载地址会随发布更新，下载后请核对实际版本。 已安装用户也可在“设置 →
+            关于”检查更新（需更新源可达）。
           </p>
+          <p>
+            <a
+              href="https://gitee.com/kkomia/kyclaw/releases/tag/v0.1.2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >查看 0.1.2 发行说明 ↗</a
+            >
+            <br />Gitee 页面可能需要登录或仓库访问权限。
+          </p>
+          <details>
+            <summary>核对 0.1.2 安装包 SHA256</summary>
+            <p>
+              以下校验值仅适用于 0.1.2（224,320,158 字节），不适用于此固定地址将来提供的新版本。
+            </p>
+            <p>
+              <code style="overflow-wrap: anywhere"
+                >d0f794e5638d671dec6cebe08c3b490f7cb9e3afb8b7a008ad96fad6a0360eee</code
+              >
+            </p>
+          </details>
         </div>
       </section>
     </main>
     <footer class="wrap">
-      <a class="logo" href="#top" aria-label="返回 kyclaw 页首">kyclaw<span>.</span></a>
+      <a class="logo" href="#top" aria-label="返回 kyclaw 页首">
+        <img src="assets/kyclaw-logo-horizontal.svg" alt="kyclaw" width="420" height="92" />
+      </a>
       <p>让想法，落在桌面上。 &nbsp; © 2026 kyclaw</p>
       <a href="#top">回到页首 ↑</a>
     </footer>
